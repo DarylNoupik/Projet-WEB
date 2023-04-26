@@ -27,8 +27,8 @@ Route::get('/', function () {
 });
 
 // Route pour la page de contact
-Route::get('/contact', 'ContactController@index')->name('contact');
+Route::get('/contact', [ContactController::class,'index'])->name('contact');
 //Route pour les activites 
-Route::get('/activities', 'EventsController@index')->name('events');
+Route::get('/activities', [EventsController::class,'index'])->name('events');
 //Route pour les produits
-Route::get('/products', 'ProductsController@index')->name('products');
+Route::get('/products', [ProductsController::class,'index'])->name('products');
