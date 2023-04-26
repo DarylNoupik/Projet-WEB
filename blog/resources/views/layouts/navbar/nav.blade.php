@@ -32,9 +32,9 @@
 <ul class="js-clone-nav pl-0 d-none d-lg-inline-block site-menu">
 <li class="active"><a href="#">Accueil</a></li>
 <li class="has-children">
-<a href="#">Activites</a>
+<a href="{{route('events')}}">Activites</a>
 <ul class="dropdown">
-<li><a href="#">Manifestations</a></li>
+<li><a href="{{route('events')}}">Manifestations</a></li>
 <li class="has-children">
 <a href="">Evenements</a>
 <ul class="dropdown">
@@ -44,7 +44,7 @@
 </li>
 </ul>
 </li>
-<li><a href="shop.html">Shop</a></li>
+<li><a href="{{route('products')}}">Shop</a></li>
 <li><a href="#">Admin</a></li>
 <li><a href="contact.html">Contact</a></li>
 
